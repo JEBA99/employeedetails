@@ -40,9 +40,6 @@ class LoginPage extends Component {
         <input type="password" placeholder="Enter Password" name="psw" required onChange={(event) => { this.setState({password: event.target.value}); }} />
 
         <button type="submit" onClick={(event)=> {(this.checkLoginCredentials()) ? this.setState({showEmployee: true}) : this.setState({showEmployee: false}) }}>Login</button>
-        <label>
-          <input type="checkbox" checked="checked" name="remember" /> Remember me
-        </label>
       </div>
     )
   }
